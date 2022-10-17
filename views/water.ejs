@@ -1,6 +1,12 @@
 <h1>Water</h1>
 <ul>
-    <% traits.forEach(trait => { %> 
+    <% waterTraits.forEach(trait => { %> 
         <li> <%= trait %> </li>
 <% }) %> 
+</ul>
+<h3>Water List:</h3>
+<ul>
+   <% signsList.forEach(sign => { %>
+        <a href="/water/<%=sign%>"><li><%= sign %></li></a>
+        <% }) %>
 </ul>

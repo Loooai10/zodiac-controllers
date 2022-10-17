@@ -1,6 +1,12 @@
 <h1>fire</h1>
 <ul>
-    <% traits.forEach(trait => { %> 
+    <% fireTraits.forEach(trait => { %> 
         <li> <%= trait %> </li>
 <% }) %> 
+</ul>
+<h3>fire List:</h3>
+<ul>
+   <% signsList.forEach(sign => { %>
+        <a href="/fire/<%=sign%>"><li><%= sign %></li></a>
+        <% }) %>
 </ul>
